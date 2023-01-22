@@ -109,7 +109,7 @@ video {
     }
 
     50% {
-        transform: translateY(0px);
+        transform: translateY(10px);
     }
 
     100% {
@@ -134,7 +134,7 @@ video {
 }
 
 #agents img {
-    height: 450px;
+    height: 400px;
     border-radius: 5px;
     /* transition: 0.5s; */
 }
