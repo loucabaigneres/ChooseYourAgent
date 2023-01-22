@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Mark Pro;
+    src: url(./fonts/FONTFONT_FF.MARK.PRO.OTF);
+}
+
+@font-face {
+    font-family: VALORANT;
+    src: url(./fonts/VALORANT\ FONT.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171f29;
+    overflow-x: hidden;
+    font-family: Mark Pro;
+    color: #ffff;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    z-index: 10;
+    background-color: #111111;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#logo_riot {
+    width: 125px;
+    filter: invert(1);
+}
+
+#nav_title {
+    font-family: VALORANT;
+    font-weight: 100;
+    font-size: 4.5em;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+video {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.5);
+}
+
+#team {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9;
+}
+
+#title {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+#team > p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#team > a > button {
+    margin-top: 50px;
+    font-size: 2em;
+    padding: 10px;
+    background-color: #f2a964;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: none;
+    transition: 100ms;
+}
+
+#team > a > button:hover {
+    transform: scale(1.05, 1.05) skewX(-3deg);
+    background-color: #f7b06e;
+}
+
+.floating {
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+#agents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+#agents > div {
+    display: flex;
+}
+
+#agents,
+#agents > div {
+    gap: 20px;
+}
+
+#agents img {
+    height: 450px;
+    border-radius: 5px;
+    /* transition: 0.5s; */
+}
+
+/* #agents img:hover {
+    transform: scale(2, 2);
+} */
